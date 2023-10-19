@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --bg-primary:  hsl(205, 78%, 60%);
+}
+body{
+  height: 100vh;
+  font-family: sans-serif;
+  display: grid;
+  place-content: center;
+}
+h1{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.underline{
+  height: 3px;
+  width: 50px;
+  background: var(--bg-primary);
+  margin: 0 auto 64px;
+}
+.card{
+  width: 556px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 32px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px 10px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  gap: 10px;
+}
+.perfil{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 10px -3px 0 var(--bg-primary);
+}
+.name{
+  font-weight: bold;
+}
+.role{
+  text-transform: uppercase;
+  color: var(--bg-primary)
+}
+.about{
+  color: hsl(210, 22%, 49%);
+  text-align: center;
+  height: 77px; 
+}
+.controls{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+button{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.controls img {
+  width: 21px;
+  height: 21px;
+}
+.controls .left{
+  transform: translateY(3px)
+}
+.controls .right{
+  transform: rotate(180deg);
+}
+.surprise{
+  border: 2px solid var(--bg-primary);
+  border-radius: 10px;
+  color: var(--bg-primary);
+  padding: 5px;
+}
